@@ -4,12 +4,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Loading</title>
-	<script src="index.js"></script>
+	<script src="index.js" type="module"></script>
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<loading>
-		<img src="./img/rotate.png" alt="img">
-	</loading>
+	<loading-screen></loading-screen>
+	<!-- 
+		Style of this wrapper class div should not affect the custom element wrapper class span 
+		because the shadow dom encapsulate that custom element from the main DOM tree
+	-->
+	<div class="wrapper">
+		<p>This color is red</p>
+	</div>
 </body>
 </html>
